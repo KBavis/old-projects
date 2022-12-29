@@ -1,0 +1,1 @@
+C application that's purpose is to replicate the the Linux shell. Implemented concepts of input/output redirection, parsing , and the synchronization of concurrent processes.
