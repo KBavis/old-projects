@@ -1,0 +1,2 @@
+•	Filtered and normalized a dataset containing 60000 images of handwritten numeric values.
+•	Trained a neural network with variable thresholds to predict the likelihood of a given image being a specific numeric value with 98% accuracy.
