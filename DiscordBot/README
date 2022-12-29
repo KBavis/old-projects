@@ -1,0 +1,1 @@
+I created this application in my Software Engineering class. It utilizes NodeJS, ExpressJS, DiscordJS, React, and MongoDB to create a fully functional application. Its purpose is to allow users to play games within a Discord Server and to have these results saved via MongoDB, and displayed via our React application. 
