@@ -1,0 +1,17 @@
+#root {
+  width: 100vw;
+}
+
+.bg-red {
+  background-color: crimson;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.nav {
+  width: 100vw;
+}
+
+/* .container {
+  width: 100vw;
+} */
