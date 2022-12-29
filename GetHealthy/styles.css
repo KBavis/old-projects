@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ALL SIMILAR STYLING FOR EACH PAGE*/
+section {
+  padding: 100px 0;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* All section should have same font */
+.about,
+.learn,
+.about-me,
+.beginner,
+.intermediate,
+.expert,
+.footer,
+.bulk,
+.cutting,
+.favorite-meal,
+.calculator {
+  font-family: "Poppins", sans-serif;
+}
+
+/* deals with our text content for every section */
+.about .about-content,
+.learn .learn-content,
+.about-me .about-me-content,
+.beginner .beginner-content,
+.intermediate .intermediate-content,
+.expert .expert-content,
+.bulk .bulk-content,
+.cutting .cutting-content,
+.favorite-meal .favorite-meal-content,
+.calculator .calculator-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* deals with titles of each section */
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: crimson;
+}
+
+/* deals with size of left column for each section on each page  */
+.beginner .beginner-content .left,
+.intermediate .intermediate-content .left,
+.expert .expert-content .left,
+.bulk .bulk-content .left,
+.cutting .cutting-content .left,
+.favorite-meal .favorite-meal-content .left,
+.about .about-content .left,
+.learn .learn-content .left,
+.about-me .about-me-content .left,
+.calculator .calculator-content .left {
+  width: 45%;
+}
+
+/* deals with our image in each section on each page */
+.beginner .beginner-content .left img,
+.intermediate .intermediate-content .left img,
+.expert .expert-content .left img,
+.bulk .bulk-content .left img,
+.cutting .cutting-content .left img,
+.favorite-meal .favorite-meal-content .left img,
+.about .about-content .left img,
+.learn .learn-content .left img,
+.about-me .about-me-content .left img,
+.calculator .calculator-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* deals with the size of our right column of each section on each page  */
+.beginner .beginner-content .right,
+.intermediate .intermediate-content .right,
+.expert .expert-content .right,
+.bulk .bulk-content .right,
+.cutting .cutting-content .right,
+.favorite-meal .favorite-meal-content .right,
+.about .about-content .right,
+.learn .learn-content .right,
+.about-me .about-me-content .right,
+.calculator .calculator-content .right {
+  width: 55%;
+}
+
+/* Deals with the sub-header to our title of each section (used by all sections) */
+.beginner .beginner-content .right .text,
+.intermediate .intermediate-content .right .text,
+.expert .expert-content .right .text,
+.bulk .bulk-content .right .text,
+.cutting .cutting-content .right .text,
+.favorite-meal .favorite-meal-content .right .text,
+.about .about-content .right .text,
+.learn .learn-content .right .text,
+.about-me .about-me-content .right .text,
+.calculator .calculator-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Deals with reference links to each of our images */
+.beginner .beginner-content .left p a,
+.expert .expert-content .left p a,
+.bulk .bulk-content .left p a,
+.favorite-meal .favorite-meal-content .left p a,
+.about .about-content .left p a .about-me .about-me-content .left p a,
+.calculator .calculator-content .left p a {
+  color: blue;
+}
+
+.learn .learn-content .left p a,
+.cutting .cutting-content .left p a,
+.intermediate .intermediate-content .left p a {
+  color: red;
+}
+
+.beginner .beginner-content .left p a:hover,
+.intermediate .intermediate-content .left p a:hover,
+.expert .expert-content .left p a:hover,
+.bulk .bulk-content .left p a:hover,
+.cutting .cutting-content .left p a:hover,
+.favorite-meal .favorite-meal-content .left p a:hover,
+.about .about-content .left p a:hover,
+.learn .learn-content .left p a:hover,
+.about-me .about-me-content .left p a:hover,
+.calculator .calculator-content .left p a:hover {
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+/* HOME SECTION STYLING (each page has a home section) */
+
+/* deals with the background */
+.home {
+  display: flex;
+  /* incorperated gradient to make it look nice when you first open each page */
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 13%,
+      rgba(46, 45, 45, 1) 38%,
+      rgba(64, 62, 62, 1) 62%,
+      rgba(97, 94, 94, 1) 88%
+    )
+    no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+/* deals with our different texts on home page */
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-2 span {
+  color: crimson;
+}
+
+/* NAVBAR STYLING (Each page has a navbar)*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  /* ensures navbar is shown throughout scrolling */
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  background: crimson;
+}
+/* causes there to be a space between our links and title */
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* styling of our links */
+.navbar .logo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+/* causes links to be displayed horizontally  */
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  /* transition for when we hover over links */
+  transition: color 0.3s ease;
+}
+/* changes color of links when hovering at the top*/
+.navbar .menu li a:hover {
+  color: black;
+}
+
+/* UNIQUE STYLING FOR OUR ABOUT PAGE*/
+.about .about-content .right p,
+.learn .learn-content .right p,
+.about-me .about-me-content .right p {
+  text-align: justify;
+}
+/* Changes background of our 'what you will learn' section */
+.learn {
+  color: #fff;
+  background: #111;
+}
+
+/* UNIQUE STYLING FOR OUR WORKOUTS PAGE  */
+
+/* causes there to be no decorations on our lists  */
+.beginner .beginner-content .right ul,
+.intermediate .intermediate-content .right ul,
+.expert .expert-content .right ul {
+  font-size: 20px;
+  list-style: none;
+}
+
+/* spaces out our list items  */
+.beginner .beginner-content .right ul li,
+.intermediate .intermediate-content .right ul li,
+.expert .expert-content .right ul li {
+  margin-bottom: 40px;
+}
+
+/* color of our links */
+.beginner .beginner-content .right ul li a,
+.expert .expert-content .right ul li a {
+  color: blue;
+}
+
+/* color of our links while hovering  */
+.beginner .beginner-content .right ul li a:hover,
+.expert .expert-content .right ul li a:hover {
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.intermediate .intermediate-content .right ul li a {
+  color: red;
+}
+
+.intermediate .intermediate-content .right ul li a:hover {
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.intermediate {
+  color: #fff;
+  background: #111;
+}
+
+/* NUTRTION PAGE SYTLING  */
+/* changes background of our cutting section */
+.cutting {
+  color: #fff;
+  background: #111;
+}
+
+/* used to highlight key words in paragraph  */
+.cutting .cutting-content .right p span {
+  font-weight: 700;
+  color: red;
+}
+
+.bulk .bulk-content .right p span {
+  font-weight: 700;
+  color: blue;
+}
+
+.cutting .cutting-content .right p a {
+  color: red;
+}
+/* deals with the link styling */
+.bulk .bulk-content .right p a {
+  color: blue;
+}
+.cutting .cutting-content .right p a:hover,
+.bulk .bulk-content .right p a:hover {
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+/* removes any styling of our lists we incorperated (no numbers, dots, etc) */
+.cutting .cutting-content .right ul,
+.bulk .bulk-content .right ul {
+  list-style: none;
+}
+
+/* tabs over our list content */
+.cutting .cutting-content .right ul .tab,
+.bulk .bulk-content .right ul .tab,
+.favorite-meal .favorite-meal-content .right ol .tab {
+  margin-left: 40px;
+}
+
+/* MACRO CALCULATOR STYLING SECTION */
+
+/* spacing of our inputs */
+#weight {
+  margin-left: 35px;
+}
+#height {
+  margin-left: 49px;
+}
+#age {
+  margin-left: 145px;
+}
+#days {
+  margin-left: 7px;
+}
+/* button styling */
+#checkBtn {
+  margin-left: 140px;
+  margin-bottom: 40px;
+  padding: 7px 25px;
+  border: 1px solid black;
+}
+/* macro text editing  */
+.answer {
+  font-weight: bold;
+}
+
+#total {
+  font-weight: normal;
+}
+
+#protein {
+  font-weight: normal;
+}
+
+#carbs {
+  font-weight: normal;
+}
+
+#fat {
+  font-weight: normal;
+}
+
+/* FOOTER SECTION STYLING */
+footer {
+  background: #111;
+  padding: 20px 20px;
+  color: #fff;
+}
+footer span a {
+  color: cyan;
+  /* color: #fff; */
+  text-decoration: none;
+  font-weight: bold;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1070px) {
+  .max-width {
+    max-width: 800px;
+  }
+
+  .beginner .beginner-content .column,
+  .intermediate .intermediate-content .column,
+  .expert .expert-content .column,
+  .about .about-content .column,
+  .learn .learn-content .column,
+  .about-me .about-me-content .column,
+  .calculator .calculator-content .column,
+  .bulk .bulk-content .column,
+  .cutting .cutting-content .column,
+  .favorite-meal .favorite-meal-content .column {
+    width: 50%;
+  }
+
+  .beginner .beginner-content .left,
+  .intermediate .intermediate-content .left,
+  .expert .expert-content .left,
+  .about .about-content .left,
+  .learn .learn-content .left,
+  .about-me .about-me-content .left,
+  .calculator .calculator-content .left,
+  .bulk .bulk-content .left,
+  .cutting .cutting-content .left,
+  .favorite-meal .favorite-meal-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 55px;
+  }
+
+  .beginner .beginner-content .right,
+  .intermediate .intermediate-content .right,
+  .expert .expert-content .right,
+  .about .about-content .right,
+  .learn .learn-content .right,
+  .about-me .about-me-content .right,
+  .calculator .calculator-content .right,
+  .bulk .bulk-content .right,
+  .cutting .cutting-content .right,
+  .favorite-meal .favorite-meal-content .right {
+    flex: 100%;
+  }
+}

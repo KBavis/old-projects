@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <!-- links to our created style sheets and our font awesome css -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>GetHealthy</title>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <!-- takes you to the top of the page when you click our logo -->
+          <a href="#">Get<span>Healthy.</span></a>
+        </div>
+        <!-- deals with our links of other html pages -->
+        <ul class="menu">
+          <li><a href="index.html" class="menu-btn">About</a></li>
+          <li><a href="nutrition.html" class="menu-btn">Nutrition</a></li>
+          <li><a href="workouts.html" class="menu-btn">Workouts</a></li>
+          <li>
+            <a href="macroCalculator.html" class="menu-btn">Calculator</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <!-- start of our content -->
+        <div class="home-content">
+          <div class="text-1">Macro</div>
+          <div class="text-2"><span> Calculator</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- macro calculator section-->
+    <section class="calculator" id="calculator">
+      <div class="max-width">
+        <!-- subtitle of section -->
+        <h2 class="title">Macro Calculator</h2>
+        <!-- start of our content (left and right column) -->
+        <div class="calculator-content">
+          <div class="column left">
+            <img src="calculator.jpg" alt="Calculator" />
+            <p>
+              <a href="https://www.stemjar.com/macro-calculator/">
+                Image Reference</a
+              >
+            </p>
+          </div>
+          <div class="column right">
+            <!-- accepting needed user input to calculate necessary macrosplit -->
+            <div class="text">Enter in the following information</div>
+            <label for="weight">Weight in pounds:</label>
+            <input type="text" id="weight" name="weight" /><br /><br />
+            <label for="height">Height in inches:</label>
+            <input type="text" id="height" name="height" /><br /><br />
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" /><br /><br />
+            <label for="days">Days active per week:</label>
+            <input type="text" id="days" name="days" /><br /><br />
+            <!-- clicking of this button iniates external js function to calculate macro split -->
+            <button onclick="calculate()" id="checkBtn">Calculate</button>
+            <!-- contents below are determined by above user input and calculated by external js and then displayed -->
+            <p class="answer">
+              Total Number of Calories Per Day: <span id="total"></span> <br />
+              <br />
+              Protein: <span id="protein"></span> <br />
+              Carbohydrates: <span id="carbs"></span> <br />
+              Fat: <span id="fat"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <!-- far fa-copyright is used to show copyright symbol -->
+      <span
+        >Created By <a href="mailto:kbavis@albany.edu">Kellen Bavis</a> |
+        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
+      >
+    </footer>
+  </body>
+</html>
